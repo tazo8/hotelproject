@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    
+  </head>
+  <body>
+    <section class="header-foto">
+      <header>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkBtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <label href="./index.html" class="logo">Hotel </label>
+          <ul>
+            <li >
+              <a class="active" href="./index.html"  >Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./rooms.html"> Rooms & Rates</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <a class="auth" href="./login.html">Login <i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+     <section class="bookRooms">
+      <div class="book">
+        <form class="grid">
+          <h4>BOOK YOUR ROOMS</h4>
+          <input type="date" placeholder="arival date">
+          <input type="date" placeholder="departure date">
+          <input type="number" placeholder="Adults">
+          <input type="number" placeholder="Children">
+          <button><a href="./rooms.html">Serch Rooms</a></button>
+        </form>
+        <div class="btns">
+         <aside class="top">
+          <h2 class="headerText">happy and comfortable place to live</h2>
+          <div class="line"></div>
+         </aside>
+          <aside class="bottom">
+            <button><a href="./login.html?register">Sing up <i class="fa-solid fa-address-card"></i></a></button>
+          <button><a href="./login.html?auth">Sing in<i class="fa-solid fa-user"></i></a></button>
+          </aside>
+        </div>
+        </div>
+     </section>
+      </div>
+    </section>
+    <h1>Welcome</h1>
+    <main>
+      <section class="welcome">
+        <article>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. I'm a
+            great place for you to tell a story and let your users know a little
+            more about you.
+          </p>
+        </article>
+        <article class="cards">
+          <div class="left">
+            <h2>Rooms & Rates</h2>
+            <span>
+              I'm a paragraph. Click here to add your own text and edit me. I'm
+              a great place for you to tell a story and let your users know a
+              little more about you.
+            </span>
+            <button><a href="./rooms.html">Read More</a></button>
+          </div>
+          <div class="center">
+            <h2>About</h2>
+            <span>
+              I'm a paragraph. Click here to add your own text and edit me. I'm
+              a great place for you to tell a story and let your users know a
+              little more about you.
+            </span>
+            <button><a href="./about.html">Read More</a></button>
+          </div>
+          <div class="right">
+            <h2>Contact</h2>
+            <span>
+              I'm a paragraph. Click here to add your own text and edit me. I'm
+              a great place for you to tell a story and let your users know a
+              little more about you.
+            </span>
+            <button><a href="./contact.html">Read More</a></button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section class="final">
+        <div class="call">
+          <p class="tobook">Call us now to book</p>
+          <p class="mobile">1-800-000-0000</p>
+        </div>
+        <div class="page">
+          <h3>Follow us</h3>
+          <article>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </article>
+        </div>
+      </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+    src="https://kit.fontawesome.com/b99f4a3edf.js"
+    crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./rendomId.js"></script>
+    <script src="./sharedfunctions.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

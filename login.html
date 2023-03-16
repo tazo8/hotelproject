@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <section class="header-foto">
+      <header>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkBtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <label href="./index.html" class="logo">Hotel </label>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./rooms.html"> Rooms & Rates</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <a id="singIn" class="auth" href="./login.html?auth"
+                >Sing in <i class="fa-solid fa-user"></i
+              ></a>
+            </li>
+            <li>
+              <a id="singUp" class="auth" href="./login.html?register"
+                >Sing up <i class="fa-solid fa-address-card"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="registerauth">
+        <section class="registerbody">
+          <aside class="registertop">
+            <aside class="authleft">
+              <span class="active-register"
+                ><a id="register" href="./login.html?register">Sing Up</a></span
+              >
+            </aside>
+            <aside class="authright">
+              <span><a id="login" href="./login.html?auth">Sing In</a></span>
+            </aside>
+          </aside>
+          <aside class="registerbottom">
+            <div class="registerinput" id="actionToggle">
+              <label for="name" class="form-controll">First Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Input first name"
+              />
+            </div>
+            <div class="registerinput" id="actionToggle">
+              <label for="lastName" class="form-controll">Last Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Input last name"
+              />
+            </div>
+            <div class="registerinput">
+              <label for="email" class="form-controll">Email adres: </label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Input email"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="changePasswordVisibility"
+                ><i class="fa-solid fa-eye"></i
+              ></span>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Input Password"
+                id="password"
+              />
+            </div>
+            <button class="btn-btn-primary" id="actionbutton">Sing Up</button>
+          </aside>
+        </section>
+      </section>
+    </section>
+    <footer>
+      <section class="final">
+        <div class="call">
+          <p class="tobook">Call us now to book</p>
+          <p class="mobile">1-800-000-0000</p>
+        </div>
+        <div class="page">
+          <h3>Follow us</h3>
+          <article>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </article>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/b99f4a3edf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    >
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./rendomId.js"></script>
+    <script src="./sharedfunctions.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./main.js"></script>
+    <script src="./auth.js"></script>
+  </body>
+</html>

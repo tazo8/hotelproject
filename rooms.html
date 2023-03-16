@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <section class="header-foto">
+      <header>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkBtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <label href="./index.html" class="logo">Hotel </label>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./rooms.html" class="active"> Rooms & Rates</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="./login.html">Login <i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="roomColection">
+        <h4 class="roomName">Rooms</h4>
+        <div class="roomFoto">
+          <div class="firstRoom">
+            <img class="Roombed" src="./assets/img/room1.jpg" alt="" />
+            <div class="roomInfo">
+              <h4 class="firstRoomInfo">Junior Suite</h4>
+              <p class="roomText">
+                Our Junior Suites offer breathtaking views of the city skyline.
+              </p>
+              <p class="price">250$-from</p>
+              <button class="more">
+                <a href="./firstroom.html">More Info</a>
+              </button>
+            </div>
+          </div>
+          <div class="firstRoom">
+            <img class="Roombed" src="./assets/img/room3.jpg" alt="" />
+            <div class="roomInfo">
+              <h4 class="firstRoomInfo">Standard Room</h4>
+              <p class="roomText">
+                Our Standard Rooms are the perfect combination of function and
+                comfort.
+              </p>
+              <p class="price">150$-from</p>
+              <button><a href="./secondroom.html">More Info</a></button>
+            </div>
+          </div>
+          <div class="firstRoom">
+            <img class="Roombed" src="./assets/img/room2.jpg" alt="" />
+            <div class="roomInfo">
+              <h4 class="firstRoomInfo">Superior Room</h4>
+              <p class="roomText">
+                Our Superior Rooms are comfortable, roomy and elegant.
+              </p>
+              <p class="price">350$-from</p>
+              <button><a href="./threroom.html">More Info</a></button>
+            </div>
+          </div>
+          <div class="secondRoom">
+            <form class="grid">
+              <h4>BOOK YOUR ROOMS</h4>
+              <input type="date" placeholder="arival date" />
+              <input type="date" placeholder="departure date" />
+              <input type="number" placeholder="Adults" />
+              <input type="number" placeholder="Children" />
+              <button><a href="">Serch Rooms</a></button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <section class="final">
+        <div class="call">
+          <p class="tobook">Call us now to book</p>
+          <p class="mobile">1-800-000-0000</p>
+        </div>
+        <div class="page">
+          <h3>Follow us</h3>
+          <article>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </article>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/b99f4a3edf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    >
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./sharedfunctions.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

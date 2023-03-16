@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <section class="header-foto">
+      <header>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkBtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <label href="./index.html" class="logo">Hotel </label>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./rooms.html"> Rooms & Rates</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="./login.html">Login <i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="roomFullInfo">
+        <div class="interiorRoom">
+          <div class="roomTop">
+            <h5 class="junior">
+              <a href="./rooms.html"><i class="fa-solid fa-left-long"></i></a>
+              Junior Suite
+            </h5>
+            <div class="juniorInfo">
+              <div class="juniorLeft">
+                <img src="./assets/img/colectio1.jpg" alt="" />
+              </div>
+              <div class="juniorRight">
+                <h5>
+                  Properties:
+                  <p>Accommodates: 2</p>
+                  <p>Size: 260 sq ft</p>
+                  <p>Beds: 2 Double(s)</p>
+                  <p>250$-from</p>
+                </h5>
+                <h5>
+                  More Info:
+                  <span
+                    >Affordable luxury. Our Junior Suites are the perfect option
+                    if you're looking for a little extra luxury. With an open
+                    400 square foot floor plan, the Junior Suites offer the
+                    extra space you need to spread out and enjoy the
+                    breathtaking views of the city skyline.</span
+                  >
+                </h5>
+                <h5 class="Amenities">
+                  Amenities:
+                  <i class="fa-solid fa-snowflake">A/C</i>
+                  <i class="fa-solid fa-tv">TV</i>
+                  <i class="fa-solid fa-wine-bottle">minibar</i>
+                  <i class="fa-solid fa-utensils">Kitchen</i>
+                  <i class="fa-solid fa-wifi">Wifi</i>
+                  <i class="fa-solid fa-phone">Telephone</i>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <form class="grid">
+            <h4>BOOK YOUR ROOMS</h4>
+            <input type="date" placeholder="arival date" />
+            <input type="date" placeholder="departure date" />
+            <input type="number" placeholder="Adults" />
+            <input type="number" placeholder="Children" />
+            <button><a href="">Serch Rooms</a></button>
+          </form>
+        </div>
+      </main>
+    </section>
+    <footer>
+      <section class="final">
+        <div class="call">
+          <p class="tobook">Call us now to book</p>
+          <p class="mobile">1-800-000-0000</p>
+        </div>
+        <div class="page">
+          <h3>Follow us</h3>
+          <article>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </article>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/b99f4a3edf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./firebase.js"></script>
+    <script src="./sharedfunctions.js"></script>
+    <script src="./main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    >
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  </body>
+</html>

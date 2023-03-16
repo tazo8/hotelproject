@@ -1,0 +1,369 @@
+@media screen and (max-width:1300px){
+
+    .roomColection{
+        grid-template-rows: 1fr 20fr;
+    }
+    .roomColection .roomFoto{
+        grid-template-columns: 1fr;
+    }
+
+    .roomColection .roomFoto .secondRoom .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .roomColection .roomFoto .firstRoom .roomInfo{
+        height: 70%;
+    }
+
+    .roomColection .roomFoto .firstRoom img{
+        width: 65%;
+        height: 65%;
+    }
+
+    .roomColection .roomFoto .secondRoom .grid button{
+        height: 75%;
+    }
+
+    .header-foto{
+        height: 160vh;
+    }
+}
+
+@media screen and (max-width:1296px){
+    .aboutMain section .infor {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .contact .sendContact{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+@media screen and (max-width:1231px){
+    .roomFullInfo .interiorRoom .grid{
+        display: grid;
+    }
+}
+
+@media screen and (max-width:1052px){
+    
+    main .welcome .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    row-gap: 10px;
+ }
+ main .welcome .left span, main .welcome .center span, main .welcome .right span {
+    font-size: 20px;
+}
+
+main .welcome .left button a, main .welcome .center button a, main .welcome .right button a {
+    font-size: 23px;
+}
+main .welcome .left, main .welcome .center, main .welcome .right {
+    width: 43%;
+    height: 38vh;
+
+}
+ }
+
+ @media screen and (max-width:948px){
+
+    .header-foto{
+        height: 165vh;
+    }
+    .roomColection .roomFoto .firstRoom p{
+        font-size: 14px;
+    }
+
+    .roomColection .roomFoto .firstRoom .firstRoomInfo{
+        font-size: 20px;
+    }
+
+    .roomColection .roomFoto .firstRoom .price{
+        font-size: 24px;
+    }
+
+    .roomColection .roomFoto .firstRoom button{
+        height: 80%;
+    }
+
+    .roomFullInfo .interiorRoom .roomTop .juniorInfo{
+        grid-template-columns: 1fr;
+    }
+
+    .roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorLeft img{
+        width: 32%;
+    }
+
+    .interiorRoom{
+        height: 100%;
+    }
+
+    .roomFullInfo .interiorRoom .grid{
+        height: 72%;
+    }
+
+    .roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5 p, .roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5 span{
+        font-size: 18px;
+    }
+ }
+
+ @media screen and (max-width:888px){
+    main .welcome{
+        height: 140vh;
+    }
+
+    .book{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .bookRooms .book .btns .bottom button{
+        height: 60%;
+    }
+ }
+
+@media screen and (max-width:860px){
+    .header-foto header nav .checkBtn{
+        display: block;
+        width: 36%;
+        text-align: center;
+    }
+
+   .header-foto header nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -200%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+        z-index: 10;
+        background-color: var(--primary-color);
+    }
+
+    .header-foto header nav ul li {
+        display: block;
+        margin: 50px 0px ;
+        line-height: 30px;
+    }
+
+    .header-foto header nav #check:checked ~ ul{
+        left: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        height: 80vh;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .roomColection .roomFoto .firstRoom img{
+        width: 72%;
+        height: 72%;
+    }
+
+    .active{
+        color: rgb(2, 172, 240) !important;
+    }
+    
+
+}
+
+@media screen and (max-width:685px){
+    .registerauth .registerbody .registerbottom .input-group .form-control{
+        width: 60%;
+    }
+
+    .registerauth .registerbody .registerbottom .registerinput .form-control{
+        width: 60%;
+    }
+
+    .registerauth .registerbody .registerbottom .input-group{
+        gap: 67px;
+    }
+}
+
+@media screen and (max-width:652px){
+    img {
+        width: 45vh;
+        height: 60vh;
+    }
+
+    .roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5 p, .roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5 span{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:600px){
+    main .welcome article p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:564px){
+    .aboutMain section .infor .title{
+        font-size: 22px;
+    }
+
+    img {
+        width: 36vh;
+        height: 46vh;
+    }
+
+    .aboutMain section .infor .rightInfo p{
+        font-size: 15px;
+    }
+
+    .roomColection .roomFoto .secondRoom .grid h4{
+        font-size: 19px;
+    }
+
+    .roomColection .roomFoto .firstRoom img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5 p, .roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5 span{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:456px){
+    .aboutMain section .infor .title {
+        font-size: 17px;
+    }
+
+    img {
+        width: 29vh;
+        height: 37vh;
+    }
+
+    .aboutMain section .infor .rightInfo p {
+        font-size: 12px;
+    }
+
+    .roomColection .roomFoto .firstRoom img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:502px){
+    .registerauth .registerbody .registerbottom .btn-btn-primary{
+        font-size: 15px;
+    }
+
+    .btn-secondary{
+        width: 33%;
+    }
+}
+
+@media screen and (max-width:408px){
+    main .welcome .left h2{
+        font-size: 20px;
+    }
+    main .welcome .left h2{
+        font-size: 20px;
+    }
+
+    footer .final{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .roomColection .roomFoto .secondRoom .grid h4 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:396px){
+    main .welcome {
+        height: 150vh;
+    }
+
+    .aboutMain section .infor .title {
+        font-size: 14px;
+    }
+
+    img {
+        width: 25vh;
+        height: 30vh;
+    }
+
+    .bookRooms .btns .headerText{
+        font-size: 21px;
+    }
+
+    .registerauth .registerbody .registerbottom .registerinput .form-controll{
+        font-size: 17px;
+    }
+
+    .registerauth .registerbody .registertop .authright,
+    .registerauth .registerbody .registertop .authleft{
+        font-size: 20px;
+    }
+
+    .registerauth .registerbody .registerbottom .btn-btn-primary{
+        width: 33%;
+    }
+
+    .registerauth .registerbody .registerbottom .input-group{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:348px){
+    main .welcome .left h2{
+        font-size: 16px;
+    }
+
+    main .welcome .left span, main .welcome .center span, main .welcome .right span {
+        font-size: 16px;
+    }
+
+    main .welcome .left button a, main .welcome .center button a, main .welcome .right button a {
+        font-size: 20px;
+    }
+
+    main .welcome article p{
+        font-size: 16px;
+    }
+
+    .bookRooms .btns .headerText{
+        font-size: 18px;
+    }
+
+    .roomColection .roomFoto .secondRoom .grid h4 {
+        font-size: 13px;
+    }
+
+    .roomColection .roomFoto .firstRoom p {
+        font-size: 11px;
+    }
+
+    .roomColection .roomFoto .firstRoom .price {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:324px){
+    .aboutMain section .infor .title {
+        font-size: 13px;
+    }
+
+    img {
+        width: 22vh;
+        height: 27vh;
+    }
+}
+

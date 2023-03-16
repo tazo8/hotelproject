@@ -1,0 +1,1219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap'); 
+
+:root{
+    --primary-font: 'Amatic SC', cursive;
+    --secondary-font:'Cormorant Garamond', serif;
+    --names-font: 'Sevillana', cursive;
+    --primary-color:  rgba(8, 7, 68, 0.87);
+    --secondary-color:rgba(8, 100, 153, 0.712);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+
+    }
+
+}
+
+.header-foto{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url(./assets/img/reagan-m-d-eWGvLCZfQ-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+}
+
+header nav{
+    width: 87%;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+
+   
+}
+
+.header-foto header nav ul li{
+        list-style: none;
+        display: inline-block;
+        line-height: 80px;
+        position: relative;
+}
+
+
+
+.header-foto header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.active {
+    color: var(--primary-color) !important;
+}
+
+
+
+.header-foto header nav ul li a:hover{
+    color: var(--primary-color);
+    transition: 0.5s ease;
+}
+
+
+
+.header-foto header nav ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+}
+
+
+
+.header-foto header nav ul li a:hover:after{
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+
+
+header nav .checkBtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+header nav #check{
+    display: none;
+} 
+
+header nav .logo{
+    color: #fff;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 80px;
+    cursor: pointer;
+    padding: 0px 50px;
+    font-family: var(--names-font);
+    letter-spacing: 3px;
+}
+
+header nav .logo:hover{
+    color: var(--primary-color);
+}
+
+.bookRooms{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items:center ;
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 0px 0px 15px;
+}
+
+.bookRooms .book .grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.bookRooms .book .grid h4 {
+    font-size: 24px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+}
+
+.bookRooms .book .grid input{
+    width: 80%;
+    height: 60%;
+    border: 1px solid black;
+    border-radius: 3%;
+    background-color: transparent;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.bookRooms .book .grid button{
+    width: 80%;
+    height: 60%;
+    border: 1px solid black;
+    border-radius: 3%;
+    background-color: transparent;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+    cursor: pointer;
+}
+
+.bookRooms .book .grid input::placeholder{
+    width: 80%;
+    height: 60%;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.bookRooms .book .grid button a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    color: #fff;
+}
+
+.bookRooms .book .grid button:hover{
+    background-color: var(--primary-color);
+    color: black;
+    transition: 0.5s ease;
+    border: transparent;
+}
+
+
+
+.bookRooms .btns{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.bookRooms .btns .headerText{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+}
+
+.bookRooms .btns .line{
+    width: 95%;
+    border: 1px solid black;
+}
+
+.bookRooms .book .btns .top{
+    height: 69%;
+}
+
+.bookRooms .book .btns  .bottom{
+    width: 70%;
+    height: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   place-items: center;
+}
+
+.bookRooms .book .btns  .bottom button{
+    width: 80%;
+    height: 30%;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.bookRooms .book .btns  .bottom button:hover{
+    background-color: var(--primary-color);
+    transition: 0,5s ease;
+    border: transparent;
+}
+
+.bookRooms .book .btns  .bottom button a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+main .welcome{
+    width: 100%;
+    height: 130vh;
+    background-image:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url(./assets/img/cory-bjork-D1yT791Nf9A-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: var(--names-font);
+}
+
+main .welcome article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .welcome article p{
+    width: 55%;
+    height: 34%;
+    font-size: 25px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color: white;
+}
+
+main .welcome .cards{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+main .welcome .left,
+main .welcome .center,
+main .welcome .right {
+    width: 50%;
+    height: 55vh;
+    border: 1px solid var(--primary-color);
+    border-radius: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: var(--secondary-color);
+}
+
+main .welcome .left h2,
+main .welcome .center h2,
+main .welcome .right h2{
+    color: #fff;
+    font-size: 24px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+main .welcome .left span,
+main .welcome .center span,
+main .welcome .right span{
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+main .welcome .left button,
+main .welcome .center button,
+main .welcome .right button{
+    border: 1px solid var(--primary-color);
+    border-radius: 10%;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+main .welcome .left button a,
+main .welcome .center button a,
+main .welcome .right button a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--secondary-color);
+    color: #fff;
+}
+
+main .welcome .left button::before,
+main .welcome .center button::before,
+main .welcome .right button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 6%;
+}
+
+main .welcome .left button:hover a,
+main .welcome .center button:hover a,
+main .welcome .right button:hover a{
+    color: rgba(0, 0, 0, 0.726);
+    transition: 0.5s ease;
+    
+}
+
+main .welcome .left button:hover::before ,
+main .welcome .center button:hover::before ,
+main .welcome .right button:hover::before{
+    width: 100%;
+    transition: 0.5s ease;
+    background-color: var(--primary-color);
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: var(--secondary-color);
+}
+
+footer .final{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+footer .final .call .tobook{
+    font-size: 26px;
+    font-family: var(--names-font);
+    font-weight: 600;
+    color: #fff;
+}
+
+footer .final .call .mobile{
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0px;
+}
+
+footer .final .page h3{
+    font-size: 26px;
+    font-family: var(--names-font);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+footer .final .page article{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 20px
+    ;
+}
+
+footer .final .page article i{
+    font-size: 25px;
+    color: #fff;
+}
+
+footer .final .page article a{
+    width: 100%;
+    color: #fff;
+}
+
+footer .final .page article a .fa-facebook:hover{
+    transition: 0.5s ease;
+    transform: translateY(-7px);
+    color: var(--primary-color) !important;
+}
+
+footer .final .page article a .fa-twitter:hover{
+    transition: 0.5s ease;
+    transform: translateY(-7px);
+    color: rgb(29, 161, 242) !important;
+}
+
+
+footer .final .page article a .fa-instagram:hover{
+    transition: 0.5s ease;
+    transform: translateY(-7px);
+    color: rgb(246, 15, 81) !important;
+}
+
+.aboutMain{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMain h3{
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--names-font);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    letter-spacing: 2px;
+}
+
+.aboutMain h3 .line{
+    width: 8%;
+    border-bottom: 2px solid #fff;
+    border-radius: 5%;
+}
+
+.aboutMain section{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMain section .infor{
+    width: 94%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 2%;
+    box-shadow: 0px 0px 15px;
+
+}
+
+.aboutMain section .infor .title{
+    width: 100%;
+    height: 100px;
+    font-size: 27px;
+    font-family: var(--secondary-font);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+ img{
+    width: 53vh;
+    height: 72vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 15px;
+}
+
+.aboutMain section .infor .rightInfo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.aboutMain section .infor .rightInfo p{
+    width: 100%;
+    font-size: 17px;
+    font-family: var(--secondary-font);
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.contact{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    place-items: center;
+    
+}
+
+.contact .sendContact{
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    place-items: center;
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    border-radius: 5%;
+    box-shadow: 0px 0px 25px;
+}
+
+
+.contact .sendContact .leftInfo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.contact .sendContact .leftInfo h3{
+    width: 100%;
+    font-size: 25px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    letter-spacing: 2px;
+}
+
+.contact .sendContact .leftInfo input{
+    width: 70%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: transparent;
+    
+}
+
+.contact .sendContact .leftInfo input::placeholder{
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color:#fff;
+}
+
+.contact .sendContact .leftInfo textarea{
+    width: 70%;
+    height: 50%;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: transparent;
+}
+
+.contact .sendContact .leftInfo textarea::placeholder{
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color:#fff;
+}
+
+.contact .sendContact .leftInfo button{
+    width: 70%;
+    height: 50%;
+    background-color:transparent;
+    border: 1px solid black;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.contact .sendContact .leftInfo button:hover{
+    background-color: var(--primary-color);
+    transition: 0.5s ease;
+    border: none;
+}
+
+.contact .sendContact .leftInfo button a{
+     width: 100%;
+     height: 100%;
+     text-decoration: none;
+     font-size: 20px;
+     font-family: var(--secondary-font);
+     color: #fff;
+}
+
+.contact .sendContact .rightInfo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.contact .sendContact .rightInfo .map{
+    width: 100%;
+    height: 100%;
+}
+.contact .sendContact .rightInfo .map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.roomColection{
+    width: 100%;
+    height: 89%;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    place-items: center;
+    
+}
+
+.roomColection .roomFoto{
+    width: 93%;
+    height: 99%;
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 0px 0px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.roomColection .roomName{
+    width: 100%;
+    font-size: 27px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 0;
+}
+
+.roomColection .roomFoto .firstRoom{
+    width: 97%;
+    height: 97%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border-radius: 5%;
+}
+
+.roomColection .roomFoto .firstRoom img{
+    width: 92%;
+    height: 92%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 25px;
+}
+
+.roomColection .roomFoto .firstRoom .firstRoomInfo{
+    width: 100%;
+    font-size: 25px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+}
+
+.roomColection .roomFoto .firstRoom p{
+    width: 100%;
+    font-size:17px ;
+    font-family: var(--secondary-font);
+    color: #fff;
+    margin: 0;
+}
+
+
+.roomColection .roomFoto .firstRoom .price{
+    width: 100%;
+    font-size: 28px;
+    font-family: var(--names-font);
+    color: #fff;
+    margin: 0;
+}
+
+.roomColection .roomFoto .firstRoom button{
+    width: 80%;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.roomColection .roomFoto .firstRoom button:hover{
+    background-color: var(--primary-color);
+    transition: 0.5s ease;
+}
+
+.roomColection .roomFoto .firstRoom button a{
+    width: 100%;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: var(--secondary-font);
+    color: #fff;
+}
+
+.roomColection .roomFoto .firstRoom .roomInfo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
+}
+
+.roomColection .roomFoto .secondRoom{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.roomColection .roomFoto .secondRoom .grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.roomColection .roomFoto .secondRoom  .grid h4 {
+    font-size: 24px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.roomColection .roomFoto .secondRoom  .grid input{
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 3%;
+    background-color: transparent;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.roomColection .roomFoto .secondRoom  .grid button{
+    width: 80%;
+    height: 60%;
+    border: 1px solid black;
+    border-radius: 3%;
+    background-color: transparent;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+    cursor: pointer;
+}
+
+.roomColection .roomFoto .secondRoom  .grid input::placeholder{
+    width: 80%;
+    height: 60%;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.roomColection .roomFoto .secondRoom  .grid button a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    color: #fff;
+}
+
+.roomColection .roomFoto .secondRoom .grid button:hover{
+    background-color: var(--primary-color);
+    color: black;
+    transition: 0.5s ease;
+    border: transparent;
+}
+
+.roomFullInfo{
+    width: 100%;
+    height: 89%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.interiorRoom{
+    width: 90%;
+    height: 98%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 0px 0px 20px;
+}
+
+.roomFullInfo .interiorRoom .roomTop{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.roomFullInfo .interiorRoom .roomTop .junior{
+    width: 100%;
+    font-size: 25px;
+    font-family: var(--names-font);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+    ;
+}
+
+.roomFullInfo .interiorRoom .roomTop .junior a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.roomFullInfo .interiorRoom .roomTop .junior a:hover{
+    color: var(--primary-color);
+    transition: 0.7s ease;
+}
+
+.roomFullInfo .interiorRoom .roomTop .juniorInfo{
+    width: 79%;
+    height: 87%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorLeft{
+    width: 92%;
+    height: 92%;
+    display: grid;
+    place-items: center;
+}
+
+.roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorLeft img{
+    width: 96%;
+    height: 96%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+.roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight{
+    width: 100%;
+    height: 88%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5{
+    font-size: 25px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+}
+
+.roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight .Amenities{
+    font-size: 25px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+    display: grid;
+    row-gap: 2px
+    ;
+}
+
+.roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5 p,
+.roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5 span{
+    font-size: 20px;
+    font-family: var(--secondary-font);
+}
+
+.roomFullInfo .interiorRoom .roomTop .juniorInfo .juniorRight h5 i{
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    place-items:  center;
+    row-gap: 20px;
+}
+
+.roomFullInfo .interiorRoom .grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.roomFullInfo .interiorRoom .grid h4{
+    font-size: 24px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+}
+
+.roomFullInfo .interiorRoom .grid input{
+    border: 1px solid black;
+    border-radius: 3%;
+    background-color: transparent;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.roomFullInfo .interiorRoom .grid input::placeholder{
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.roomFullInfo .interiorRoom .grid button{
+    border: 1px solid black;
+    border-radius: 3%;
+    background-color: transparent;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+    cursor: pointer;
+}
+
+.roomFullInfo .interiorRoom .grid button a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    color: #fff;
+}
+
+.roomFullInfo .interiorRoom .grid button:hover{
+    background-color: var(--primary-color);
+    color: black;
+    transition: 0.5s ease;
+    border: transparent;
+}
+
+.registerauth{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.registerauth .registerbody{
+    width: 80%;
+    height: 77%;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: var(--secondary-color);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.registerauth .registerbody .registertop{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registerauth .registerbody .registertop span{
+    cursor: pointer;
+}
+
+.registerauth .registerbody .registertop .authleft{
+    width: 30%;
+    font-size: 25px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+}
+
+.registerauth .registerbody .registertop .authleft a{
+    width: 30%;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.registerauth .registerbody .registertop .authright{
+    width: 30%;
+    font-size: 25px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+}
+
+.registerauth .registerbody .registertop .authright a{
+    text-decoration: none;
+     width: 30%;
+    font-size: 25px;
+    font-family: var(--names-font);
+    font-weight: bold;
+    color: #fff;
+}
+
+.active-register{
+    color: var(--primary-color);
+}
+
+.noactive{
+    color: #fff;
+}
+
+.registerauth .registerbody .registerbottom{
+    width: 100%;
+    height: 100%;
+}
+.registerauth .registerbody .registerbottom .registerinput{
+    width: 100%;
+    height: 15%;
+    display: block;
+    
+}
+
+
+.registerauth .registerbody .registerbottom .registerinput .form-control{
+    width: 80%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 3%;
+    background-color: transparent;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.registerauth .registerbody .registerbottom .registerinput .form-control::placeholder{
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.registerauth .registerbody .registerbottom .registerinput .form-controll{
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    color: #fff;
+}
+
+.registerauth .registerbody .registerbottom .input-group{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+}
+
+.registerauth .registerbody .registerbottom .input-group .input-group-text{
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    color: #fff;
+}
+
+.registerauth .registerbody .registerbottom .input-group .form-control{
+    width: 80%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 3%;
+    background-color: transparent;
+     font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.registerauth .registerbody .registerbottom .input-group .form-control::placeholder{
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    color:#fff;
+}
+
+.registerauth .registerbody .registerbottom .btn-btn-primary{
+    width: 20%;
+    height: 6%;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size:20px ;
+    color: #fff;
+    font-family: var(--names-font);
+    border-radius: 5%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.registerauth .registerbody .registerbottom .btn-btn-primary:hover{
+    background-color: var(--primary-color);
+    transition: 0.7s ease;
+    border-radius: 5%;
+}
+
+.btn-secondary{
+    width: 20%;
+    height: 6%;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size:20px ;
+    color: #fff;
+    font-family: var(--names-font);
+    border-radius: 5%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.btn-secondary:hover{
+    background-color: black;
+    transition: 0.7s ease;
+    border-radius: 5%;
+}

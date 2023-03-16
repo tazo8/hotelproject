@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <section class="header-foto">
+      <header>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkBtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <label href="./index.html" class="logo">Hotel </label>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./rooms.html"> Rooms & Rates</a>
+            </li>
+            <li>
+              <a class="active" href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="./login.html">Login <i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="contact">
+        <div class="sendContact">
+          <aside class="leftInfo">
+            <h3>Message</h3>
+            <input type="text" id="name" placeholder="Name" />
+
+            <input type="text" id="surname" placeholder="surname" />
+
+            <input type="email" id="email" placeholder="Email" />
+
+            <textarea
+              name="text"
+              id="text"
+              rows="8"
+              placeholder="your text..."
+            ></textarea>
+
+            <button><a href="">SEND</a></button>
+          </aside>
+          <aside class="rightInfo">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d198569.21291578177!2d1.299000522951901!3d38.95496167500563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x129946a367af2bab%3A0x28aa11c74b949f42!2sHotel%20THB%20Los%20Molinos%2C%20Carrer%20de%20Ramon%20Muntaner%2C%2060%2C%2007800%20Ibiza%2C%20Balearic%20Islands%2C%20Spain!3m2!1d38.9043001!2d1.4285682!5e0!3m2!1sen!2sge!4v1672233696363!5m2!1sen!2sge"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="final">
+        <div class="call">
+          <p class="tobook">Call us now to book</p>
+          <p class="mobile">1-800-000-0000</p>
+        </div>
+        <div class="page">
+          <h3>Follow us</h3>
+          <article>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </article>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/b99f4a3edf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    >
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./sharedfunctions.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
